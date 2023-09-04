@@ -1,19 +1,66 @@
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
-@import url("../abstracts/__abstracts-dir.scss");
+@import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 @font-face {
   font-family: "TodesLight";
-  src: url("./Assets/fonts/Todes Light.ttf") format("ttf"); }
+  src: "./Assets/fonts/Todes Light.ttf" format("ttf");
+}
+@font-face {
+  font-family: "TodesLight";
+  src: "./Assets/fonts/Todes Light.ttf" format("ttf");
+}
 h1, h2, h3, h4, h5 {
-  font-family: "wondar-quason, sans serif"; }
+  font-family: "wondar-quason, sans serif";
+}
 
 p {
-  font-family: "TodesLight, sans serif"; }
+  font-family: "TodesLight, sans serif";
+  font-size: 1.5vw;
+}
 
-.test {
-  background-color: red; }
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-/*# sourceMappingURL=Style.css.map */
+#ChooseCategory {
+  background-image: linear-gradient(to right, rgba(250, 246, 240, 0.9), rgba(250, 246, 240, 0.9)), url("../Assets/img/banner/imgbgcategory.jpg");
+  background-size: cover;
+}
+
+#categoryIconsContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  row-gap: 7%;
+  margin: 1%;
+  padding: 1%;
+  padding-bottom: 10%;
+}
+#categoryIconsContainer .item {
+  background-color: #ffffff;
+  margin: 1%;
+  width: 50px;
+  padding: 7%;
+}
+#categoryIconsContainer .item img {
+  width: 30%;
+}
+#categoryIconsContainer .item img.arrow {
+  width: 12%;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+div,
+section {
+  border: solid black 1px;
+}/*# sourceMappingURL=Style.css.map */

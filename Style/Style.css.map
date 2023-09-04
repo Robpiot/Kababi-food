@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAQ,gEAAwD;ACAxD,gDAAwC;ACAhD,CAAE;EACE,OAAO,EAAG,CAAC;EACX,MAAM,EAAE,CAAC;;AFCb,UAGC;EAFG,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,mDAAmD;ACH5D,kBAAc;EACX,WAAW,EECH,2BAA2B;;AFEtC,CAAC;EACG,WAAW,EEFC,wBAAwB;;ADKxC,KAAK;EACD,gBAAgB,EAAE,GAAG",
-"sources": ["abstracts/_fonts.scss","base/_typography.scss","Style.scss","abstracts/_variables.scss"],
-"names": [],
-"file": "Style.css"
-}
+{"version":3,"sources":["abstracts/_fonts.scss","Style.scss","Style.css","base/_typography.scss","abstracts/_variables.scss","components/_container.scss","layouts/_sectionChooseCategory.scss"],"names":[],"mappings":"AAAQ,gEAAA;AAAA,gEAAA;ACAR;EACI,UAAA;EACA,SAAA;ACGJ;;AFFA;EACI,yBAAA;EACA,mDAAA;AEKJ;AFPA;EACI,yBAAA;EACA,mDAAA;AESJ;ACZA;EACG,wCCEQ;AFYX;;ACXA;EACI,qCCDY;EDEb,gBAAA;ADcH;;AGtBA;EACI,iBAAA;EACA,cAAA;AHyBJ;;AI3BA;EACI,8IAAA;EACA,sBAAA;AJ8BJ;;AI3BA;EACI,aAAA;EACA,gCAAA;EACA,mBAAA;OAAA,cAAA;EACA,WAAA;EACA,UAAA;EACA,WAAA;EACA,mBAAA;AJ8BJ;AI5BI;EACI,yBAAA;EACA,UAAA;EACA,WAAA;EACA,WAAA;AJ8BR;AI5BQ;EACI,UAAA;AJ8BZ;AI3BQ;EACI,UAAA;AJ6BZ;;AIvBA;EACI,uBAAA;EACA,kBAAA;AJ0BJ;;AItBA;;EAEI,uBAAA;AJyBJ","file":"Style.css"}
