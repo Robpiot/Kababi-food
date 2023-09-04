@@ -2,3 +2,12 @@
     padding : 0;
     margin: 0;
 }
+
+@import "./abstracts/__abstracts-dir.scss";
+@import "base/__base-dir.scss";
+@import "components/__components-dir.scss";
+@import "layouts/__layouts-dir.scss";
+
+.test{
+    background-color: red;
+}
