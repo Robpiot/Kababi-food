@@ -1,4 +1,19 @@
+@import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
+@import url("../abstracts/__abstracts-dir.scss");
 * {
   padding: 0;
-  margin: 0;
-}/*# sourceMappingURL=Style.css.map */
+  margin: 0; }
+
+@font-face {
+  font-family: "TodesLight";
+  src: url("./Assets/fonts/Todes Light.ttf") format("ttf"); }
+h1, h2, h3, h4, h5 {
+  font-family: "wondar-quason, sans serif"; }
+
+p {
+  font-family: "TodesLight, sans serif"; }
+
+.test {
+  background-color: red; }
+
+/*# sourceMappingURL=Style.css.map */
