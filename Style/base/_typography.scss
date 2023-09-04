@@ -1,4 +1,4 @@
-@import url("../abstracts/__abstracts-dir.scss");
+@import "../abstracts/__abstracts-dir";
 
 h1,h2,h3,h4,h5{
    font-family: $titleFont ;
@@ -6,4 +6,5 @@ h1,h2,h3,h4,h5{
 
 p{
     font-family: $paragraphFont ;
+   font-size: 1.5vw;
 }
