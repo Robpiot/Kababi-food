@@ -1,19 +1,99 @@
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
-@import url("../abstracts/__abstracts-dir.scss");
+@import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
+@font-face {
+  font-family: "TodesLight";
+  src: url("./Assets/fonts/Todes Light.ttf") format("ttf");
+}
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
 
 @font-face {
   font-family: "TodesLight";
-  src: url("./Assets/fonts/Todes Light.ttf") format("ttf"); }
+  src: url("./Assets/fonts/Todes Light.ttf") format("ttf");
+}
 h1, h2, h3, h4, h5 {
-  font-family: "wondar-quason, sans serif"; }
+  font-family: "wondar-quason, sans serif";
+}
 
 p {
-  font-family: "TodesLight, sans serif"; }
+  font-family: "TodesLight, sans serif";
+}
 
-.test {
-  background-color: red; }
+#BAT {
+  display: flex;
+  position: relative;
+  background-color: #c8a969;
+  color: #ffffff;
+  text-transform: uppercase;
+  justify-content: space-around;
+  text-align: center;
+  border: none;
+  border-radius: 0.3125rem;
+  margin: 0.325rem;
+  padding: 0.6rem;
+}
+#BAT img {
+  width: 9%;
+  align-self: center;
+  filter: invert(500%) contrast(500%);
+}
 
-/*# sourceMappingURL=Style.css.map */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flexbox;
+  color: #ffffff;
+}
+.header nav {
+  display: grid;
+}
+.header ul {
+  grid-template-rows: 3;
+  justify-content: space-between;
+  margin: 12px;
+  list-style-type: none;
+}
+.header .logo-burger {
+  flex-direction: row;
+  justify-self: flex-start;
+}
+.header .menu {
+  display: none;
+}
+.header .contact {
+  display: none;
+}
+
+.nav:hover .menu {
+  display: inline-flex;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.nav:hover .contact {
+  display: inline-flex;
+  align-self: self-end;
+  flex-wrap: wrap;
+}
+.nav:hover li:hover {
+  color: #c8a969;
+}
+.nav:hover a {
+  all: unset;
+}/*# sourceMappingURL=Style.css.map */

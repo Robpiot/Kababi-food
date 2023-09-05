@@ -1,0 +1,42 @@
+@import "../components/_container.scss";
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flexbox;
+    color : $primaryColor;
+    nav {
+        display: grid;
+    } ul {
+        grid-template-rows: 3;
+        justify-content: space-between;
+        
+        margin: 12px;
+        list-style-type: none;
+    }
+    .logo-burger{
+        flex-direction: row;
+        justify-self: flex-start; 
+    }
+    .menu {
+        display: none;
+    } .contact {
+        display: none;
+    }
+}
+
+     .nav:hover{
+        .menu   {
+            display: inline-flex;
+            align-self: center;
+            flex-wrap: wrap;  
+        } .contact {
+             display: inline-flex;
+            align-self: self-end;
+            flex-wrap: wrap;
+        } li:hover {
+            color : $secondaryColor;
+        }
+        a{
+            all: unset;
+        }
+    } 
+    
