@@ -58,7 +58,7 @@ p {
 .item:hover {
   background-color: rgb(200, 169, 105);
 }
-.item:hover p {
+.item:hover h5 {
   color: white;
 }
 .item:hover .icon {
@@ -109,4 +109,31 @@ p {
   background-repeat: no-repeat;
   padding-top: 6%;
   background-position: right;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #categoryIconsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-size: 105% 100%;
+    background-position: 0%;
+  }
+  .item {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .item {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1900px) {
+  .item {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .item {
+    width: 250px;
+  }
 }/*# sourceMappingURL=Style.css.map */
