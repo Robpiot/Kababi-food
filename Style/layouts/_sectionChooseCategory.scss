@@ -1,41 +1,89 @@
+
+
+.item {
+    background-color: #ffffff;
+    margin: 1%;
+    width: 60px;
+
+    .icon {
+        width: 30%;
+        padding-top:10%;
+    }
+
+    .arrow{
+        width: 12%;
+        padding-bottom: 10%;
+    }
+}
+
+.item:hover{
+    background-color: rgb(200, 169, 105);
+    
+    p{
+        color:white;
+    }
+
+    .icon{
+        filter: brightness(0) invert(1);
+    }
+        
+    .arrow{
+        filter: grayscale(1) invert(1);
+    }
+}
+
+
+.center {
+justify-content: center;
+text-align: center;
+
+}
+
+.sectionText{
+    padding-top:7%;
+}
+
+.sectionText p{
+    padding-top: 0;
+}
+
+.sectionBackgroundText{
+    padding-top:5%;
+    position:absolute;
+    color:$colorBackgroundText;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 8vw; ;
+}
+
 #ChooseCategory {
-    background-image: linear-gradient(to right, rgba(250, 246, 240, 0.9), rgba(250, 246, 240, 0.9)), url("../Assets/img/banner/imgbgcategory.jpg");
-    background-size: cover;
+
+    background-color: rgba(200, 169, 105, 0.2);
 }
 
 #categoryIconsContainer {
     display: grid;
     grid-template-columns: auto auto;
+    -moz-column-gap: 5%;
     column-gap: 5%;
     row-gap: 7%;
     margin: 1%;
-    padding: 1%;
-    padding-bottom: 10%;
-
-    .item {
-        background-color: #ffffff;
-        margin: 1%;
-        width: 50px;
-        padding: 7%;
-
-        img {
-            width: 30%;
-        }
-
-        img.arrow{
-            width: 12%;
-        }
-    }
-
+    padding: 6%;
+      padding-bottom: 6%;
+    padding-bottom: 14%;
+    background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
+    background-size: 90% 70%;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    background-position: right;
 }
 
-.center {
-    justify-content: center;
-    text-align: center;
+@media screen and (min-width: 481px) and (max-width:900px){
 
+    
 }
 
-div,
-section {
-    border: solid black 1px;
+@media screen and (min-width: 901px){
+
+    
 }

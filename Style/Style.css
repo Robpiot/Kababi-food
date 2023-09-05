@@ -13,12 +13,26 @@
   font-family: "TodesLight";
   src: "./Assets/fonts/Todes Light.ttf" format("ttf");
 }
+p, h1, h2, h3, h4, h5 {
+  padding: 1%;
+}
+
 h1, h2, h3, h4, h5 {
-  font-family: "wondar-quason, sans serif";
+  font-family: "Wondar Quason Free", sans-serif;
+}
+
+h5 {
+  font-size: 1.5vw;
+}
+
+h3 {
+  font-size: 3vw;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 p {
-  font-family: "TodesLight, sans serif";
+  font-family: "TodesLight", sans-serif;
   font-size: 1.5vw;
 }
 
@@ -27,32 +41,31 @@ p {
   margin: 0 auto;
 }
 
-#ChooseCategory {
-  background-image: linear-gradient(to right, rgba(250, 246, 240, 0.9), rgba(250, 246, 240, 0.9)), url("../Assets/img/banner/imgbgcategory.jpg");
-  background-size: cover;
-}
-
-#categoryIconsContainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
-  row-gap: 7%;
-  margin: 1%;
-  padding: 1%;
-  padding-bottom: 10%;
-}
-#categoryIconsContainer .item {
+.item {
   background-color: #ffffff;
   margin: 1%;
-  width: 50px;
-  padding: 7%;
+  width: 60px;
 }
-#categoryIconsContainer .item img {
+.item .icon {
   width: 30%;
+  padding-top: 10%;
 }
-#categoryIconsContainer .item img.arrow {
+.item .arrow {
   width: 12%;
+  padding-bottom: 10%;
+}
+
+.item:hover {
+  background-color: rgb(200, 169, 105);
+}
+.item:hover p {
+  color: white;
+}
+.item:hover .icon {
+  filter: brightness(0) invert(1);
+}
+.item:hover .arrow {
+  filter: grayscale(1) invert(1);
 }
 
 .center {
@@ -60,7 +73,40 @@ p {
   text-align: center;
 }
 
-div,
-section {
-  border: solid black 1px;
+.sectionText {
+  padding-top: 7%;
+}
+
+.sectionText p {
+  padding-top: 0;
+}
+
+.sectionBackgroundText {
+  padding-top: 5%;
+  position: absolute;
+  color: rgba(200, 169, 105, 0.1);
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 8vw;
+}
+
+#ChooseCategory {
+  background-color: rgba(200, 169, 105, 0.2);
+}
+
+#categoryIconsContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 5%;
+  column-gap: 5%;
+  row-gap: 7%;
+  margin: 1%;
+  padding: 6%;
+  padding-bottom: 6%;
+  padding-bottom: 14%;
+  background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
+  background-size: 90% 70%;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  background-position: right;
 }/*# sourceMappingURL=Style.css.map */

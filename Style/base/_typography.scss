@@ -1,7 +1,21 @@
 @import "../abstracts/__abstracts-dir";
 
+p, h1,h2,h3,h4,h5{
+    padding:1%;
+
+}
+
 h1,h2,h3,h4,h5{
    font-family: $titleFont ;
+}
+
+h5{
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 3vw;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 p{
