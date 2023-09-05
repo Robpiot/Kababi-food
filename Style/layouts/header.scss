@@ -1,16 +1,29 @@
 @import "../components/_container.scss";
-.header {
-    background-color: rgb(0, 0, 0);
+
+header {
+    position: relative;
+    background-image: url(/Assets/img/slider/img_bg_slider_home01.jpg);
+    
+    
     display: flexbox;
     color : $primaryColor;
+    
     nav {
         display: grid;
-    } ul {
         grid-template-rows: 3;
-        justify-content: space-between;
+        grid-template-columns: 5;
         
+    } ul {
+       
+        justify-content: space-between;
+        align-items: baseline;
         margin: 12px;
         list-style-type: none;
+        li  {
+            #phoneLogo {
+                width: 6%;
+            };
+        }
     }
     .logo-burger{
         flex-direction: row;
@@ -28,10 +41,18 @@
             display: inline-flex;
             align-self: center;
             flex-wrap: wrap;  
+            
         } .contact {
-             display: inline-flex;
-            align-self: self-end;
-            flex-wrap: wrap;
+            display: inline-flex;
+            align-self: flex-end;
+            flex-wrap: nowrap;  
+            flex-direction: row;
+           
+           
+            
+        } .phoneLine {
+            display: block;
+            flex-direction: row;
         } li:hover {
             color : $secondaryColor;
         }
@@ -40,3 +61,6 @@
         }
     } 
     
+@media screen {
+    
+}
