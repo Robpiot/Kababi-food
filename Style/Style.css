@@ -41,6 +41,14 @@ p {
   margin: 0 auto;
 }
 
+img {
+  padding: 5% 0;
+}
+
+.container > * {
+  max-width: inherit;
+}
+
 .item {
   background-color: #ffffff;
   margin: 1%;
@@ -123,17 +131,51 @@ p {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  #categoryIconsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-size: 105% 100%;
+    background-position: 0%;
+  }
   .item {
     width: 110px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1900px) {
+@media screen and (min-width: 1025px) {
+  #categoryIconsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 2%;
+    background-image: none;
+  }
+  #ChooseCategory {
+    background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
+    background-size: 109% 107%;
+    background-position: 49% 18%;
+  }
   .item {
-    width: 190px;
+    min-width: 120px;
+    padding: 2% 0;
   }
 }
-@media screen and (min-width: 1901px) {
+@media screen and (min-width: 1025px) and (min-width: 1200px) {
   .item {
-    width: 250px;
+    min-width: 150px;
+  }
+}
+@media screen and (min-width: 1025px) and (min-width: 1500px) {
+  .item {
+    min-width: 200px;
+  }
+  .sectionBackgroundText {
+    margin-left: -150px;
+  }
+}
+@media screen and (min-width: 1025px) and (min-width: 2100px) {
+  .item {
+    min-width: 250px;
+  }
+  .sectionBackgroundText {
+    margin-left: -350px;
   }
 }/*# sourceMappingURL=Style.css.map */

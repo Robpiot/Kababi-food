@@ -1,5 +1,13 @@
 
 
+
+img{
+    padding:5% 0;
+}
+
+.container > *{
+    max-width: inherit;
+}
 .item {
     background-color: #ffffff;
     margin: 1%;
@@ -7,53 +15,54 @@
 
     .icon {
         width: 30%;
-        padding-top:10%;
+        padding-top: 10%;
     }
 
-    .arrow{
+    .arrow {
         width: 12%;
         padding-bottom: 10%;
     }
 }
 
-.item:hover{
+.item:hover {
     background-color: rgb(200, 169, 105);
-    
-    h5{
-        color:white;
+
+    h5 {
+        color: white;
     }
 
-    .icon{
+    .icon {
         filter: brightness(0) invert(1);
     }
-        
-    .arrow{
+
+    .arrow {
         filter: grayscale(1) invert(1);
     }
 }
 
 
 .center {
-justify-content: center;
-text-align: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
-.sectionText{
-    padding-top:7%;
+.sectionText {
+    padding-top: 7%;
 }
 
-.sectionText p{
+.sectionText p {
     padding-top: 0;
 }
 
-.sectionBackgroundText{
-    padding-top:5%;
-    position:absolute;
-    color:$colorBackgroundText;
+.sectionBackgroundText {
+    padding-top: 5%;
+    position: absolute;
+    color: $colorBackgroundText;
     text-transform: uppercase;
     text-align: left;
-    font-size: 8vw; ;
+    font-size: 8vw;
+    ;
 }
 
 #ChooseCategory {
@@ -69,7 +78,7 @@ text-align: center;
     row-gap: 7%;
     margin: 1%;
     padding: 6%;
-      padding-bottom: 6%;
+    padding-bottom: 6%;
     padding-bottom: 14%;
     background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
     background-size: 90% 70%;
@@ -78,39 +87,85 @@ text-align: center;
     background-position: right;
 }
 
-@media screen and (min-width: 481px) and (max-width:768px){
-    
+@media screen and (min-width: 481px) and (max-width:768px) {
+
     #categoryIconsContainer {
         display: grid;
         grid-template-columns: auto auto auto;
         background-size: 105% 100%;
         background-position: 0%;
     }
+
     .item {
-              width: 90px;
+        width: 90px;
     }
-    
+
 }
 
-@media screen and (min-width: 769px) and (max-width:1024px){
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    #categoryIconsContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-size: 105% 100%;
+        background-position: 0%;
+    }
 
     .item {
         width: 110px;
-}
+    }
 
 }
-@media screen and (min-width: 1025px)and (max-width:1900px){
+
+@media screen and (min-width: 1025px){
+
+
+    #categoryIconsContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 2%;
+        background-image: none;
+
+    }
+
+    #ChooseCategory {
+        background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
+        background-size: 109% 107%;
+        background-position: 49% 18%;
+    }
 
     .item {
-        width: 190px;
-}
+        min-width: 120px;
+        padding: 2% 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        .item {
+            min-width: 150px;
+        }
+    }
+
+    @media screen and (min-width:1500px) {
+        .item {
+            min-width: 200px;
+        }
+
+        .sectionBackgroundText{
+            margin-left: -150px;
+        }
+
+        
+    }
+    @media screen and (min-width: 2100px) {
+
+        .item {
+            min-width: 250px;
+        }
+        .sectionBackgroundText{
+            margin-left: -350px;
+        }
+    }
     
+
 }
 
-@media screen and (min-width: 1901px){
-
-    .item {
-        width: 250px;
-}
-    
-}
