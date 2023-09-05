@@ -1,8 +1,12 @@
 @import "../components/_container.scss";
 
+html {
+    height: 100vh;
+}
+
 header {
     position: relative;
-    background-image: url(/Assets/img/slider/img_bg_slider_home01.jpg);
+    // background-image: url(/Assets/img/slider/img_bg_slider_home01.jpg);
     
     
     display: flexbox;
@@ -35,8 +39,8 @@ header {
         display: none;
     }
 }
-
-     .nav:hover{
+@media screen and (max-width: 480px) {
+    .nav:hover{
         .menu   {
             display: inline-flex;
             align-self: center;
@@ -60,7 +64,69 @@ header {
             all: unset;
         }
     } 
-    
-@media screen {
-    
+
 }
+     
+    
+    @media screen and (min-width: 481px)  {
+        header {
+            position: relative;
+            background-image: url(/Assets/img/slider/img_bg_slider_home01.jpg);
+            
+            
+            display: grid;
+            color : $primaryColor;
+            
+            nav {
+                display: grid;
+                grid-template-rows: 10%;
+                grid-template-columns: 20% 20% 20% 20% 20% ;
+                
+            } ul {
+               
+                justify-content: space-around;
+                align-items: baseline;
+                margin: 12px;
+                list-style-type: none;
+                li  {
+                    #phoneLogo {
+                        width: 16%;
+                    };
+                }
+            }
+            .logo-burger{
+                flex-direction: row;
+                justify-self: flex-start; 
+                
+            }
+            .menu   {
+                
+                display: inline-flex;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                justify-content: space-evenly;
+                justify-items: flex-start;
+                
+               
+                
+                
+            } .contact {
+                grid-column: 5;
+                display: inline-flex;
+                justify-self: stretch;
+                flex-wrap: nowrap;  
+                flex-direction: row;
+                margin: auto;
+               
+               
+                
+            } .phoneLine {
+                display: block;
+                flex-direction: row;
+            } li:hover {
+                color : $secondaryColor;
+            }
+            a{
+                all: unset;
+            }
+    }}
