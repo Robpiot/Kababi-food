@@ -5,9 +5,6 @@ img{
     padding:5% 0;
 }
 
-.container > *{
-    max-width: inherit;
-}
 .item {
     background-color: #ffffff;
     margin: 1%;
@@ -128,6 +125,7 @@ img{
 
     }
 
+    //Background image positionning
     #ChooseCategory {
         background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
         background-size: 109% 107%;
@@ -141,31 +139,21 @@ img{
 
     @media screen and (min-width:1200px) {
         .item {
-            min-width: 150px;
-        }
-    }
-
-    @media screen and (min-width:1500px) {
-        .item {
-            min-width: 200px;
+            min-width:150px;
         }
 
+        .item h5{
+            font-size: 1vw;
+        }
+
+        // for the text background ot be aligned left
         .sectionBackgroundText{
-            margin-left: -150px;
-        }
-
-        
-    }
-    @media screen and (min-width: 2100px) {
-
-        .item {
-            min-width: 250px;
-        }
-        .sectionBackgroundText{
-            margin-left: -350px;
+            left: 0;
+            font-size: 6vw;
         }
     }
-    
+
+       
 
 }
 

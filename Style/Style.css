@@ -41,12 +41,12 @@ p {
   margin: 0 auto;
 }
 
-img {
-  padding: 5% 0;
+.container > * {
+  max-width: 1400px;
 }
 
-.container > * {
-  max-width: inherit;
+img {
+  padding: 5% 0;
 }
 
 .item {
@@ -162,20 +162,11 @@ img {
   .item {
     min-width: 150px;
   }
-}
-@media screen and (min-width: 1025px) and (min-width: 1500px) {
-  .item {
-    min-width: 200px;
+  .item h5 {
+    font-size: 1vw;
   }
   .sectionBackgroundText {
-    margin-left: -150px;
-  }
-}
-@media screen and (min-width: 1025px) and (min-width: 2100px) {
-  .item {
-    min-width: 250px;
-  }
-  .sectionBackgroundText {
-    margin-left: -350px;
+    left: 0;
+    font-size: 6vw;
   }
 }/*# sourceMappingURL=Style.css.map */
