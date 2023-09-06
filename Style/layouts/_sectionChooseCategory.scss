@@ -1,11 +1,5 @@
 
-
-
-img{
-    padding:5% 0;
-}
-
-.item {
+.sectionCategory-Item {
     background-color: #ffffff;
     margin: 1%;
     width: 60px;
@@ -21,7 +15,7 @@ img{
     }
 }
 
-.item:hover {
+.sectionCategory-Item:hover {
     background-color: rgb(200, 169, 105);
 
     h5 {
@@ -38,62 +32,34 @@ img{
 }
 
 
-.center {
-    justify-content: center;
-    text-align: center;
-
-}
-
-.sectionText {
-    padding-top: 7%;
-}
-
-.sectionText p {
-    padding-top: 0;
-}
-
-.sectionBackgroundText {
-    padding-top: 5%;
-    position: absolute;
-    color: $colorBackgroundText;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 8vw;
-    ;
-}
 
 #ChooseCategory {
 
     background-color: rgba(200, 169, 105, 0.2);
 }
 
-#categoryIconsContainer {
-    display: grid;
+#categoryGrid {
     grid-template-columns: auto auto;
-    -moz-column-gap: 5%;
     column-gap: 5%;
     row-gap: 7%;
     margin: 1%;
-    padding: 6%;
-    padding-bottom: 6%;
-    padding-bottom: 14%;
+    padding: 6% 6% 20% 6%;
     background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
     background-size: 90% 70%;
     background-repeat: no-repeat;
-    padding-top: 6%;
     background-position: right;
 }
 
 @media screen and (min-width: 481px) and (max-width:768px) {
 
-    #categoryIconsContainer {
+    #categoryGrid {
         display: grid;
         grid-template-columns: auto auto auto;
         background-size: 105% 100%;
         background-position: 0%;
     }
 
-    .item {
+    .sectionCategory-Item {
         width: 90px;
     }
 
@@ -101,14 +67,14 @@ img{
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
 
-    #categoryIconsContainer {
+    #categoryGrid {
         display: grid;
         grid-template-columns: auto auto auto;
         background-size: 105% 100%;
         background-position: 0%;
     }
 
-    .item {
+    .sectionCategory-Item {
         width: 110px;
     }
 
@@ -117,7 +83,7 @@ img{
 @media screen and (min-width: 1025px){
 
 
-    #categoryIconsContainer {
+    #categoryGrid {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         gap: 2%;
@@ -130,27 +96,56 @@ img{
         background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2)), url("../Assets/img/banner/imgbgcategory.jpg");
         background-size: 109% 107%;
         background-position: 49% 18%;
+        background-repeat: no-repeat;
     }
 
-    .item {
+    .sectionCategory-Item {
         min-width: 120px;
         padding: 2% 0;
     }
 
     @media screen and (min-width:1200px) {
-        .item {
+        .sectionCategory-Item {
             min-width:150px;
         }
 
-        .item h5{
+        .sectionCategory-Item h5{
             font-size: 1vw;
         }
 
         // for the text background ot be aligned left
         .sectionBackgroundText{
-            left: 0;
             font-size: 6vw;
         }
+    }
+
+    @media screen and (min-width:1401px) {
+ 
+        .sectionCategory-Item h5{
+            font-size: 18px;
+        }
+
+        // for the text background ot be aligned left
+        .sectionBackgroundText{
+            font-size: 110px;
+        }
+
+        .sectionText{
+            padding-top:9%;
+            h3{
+                font-size:40px;
+            }
+
+            p{
+                font-size:25px ;
+            }
+        }
+
+        #categoryGrid{
+            padding-top: 4%;
+        }
+
+        
     }
 
        

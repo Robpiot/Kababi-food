@@ -11,9 +11,10 @@
 <body>
     <header></header>
     <main>
+        <div class="container">
         <section id="ChooseCategory">
-            <div class="container cente">
-                
+            <div class="container center">
+
                 <!-- Title, text and text in background -->
                 <div class="sectionBackgroundText" id="categoryBackgroundText">
                     <h2>Category</h2>
@@ -26,37 +27,37 @@
 
                 <!-- Grid with food icons as item -->
 
-                <div class="sectionGrid center" id="categoryIconsContainer">
-                    <div class="item center">
+                <div class="sectionGrid center" id="categoryGrid">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/001-cheeseburger.png">
                         <h5>Cheeseburger</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
                     </div>
-                    <div class="item center">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/002-pizza.png">
                         <h5>Pizza Slice</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
 
                     </div>
-                    <div class="item center">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/003-coffee.png">
                         <h5>Coffee-Cup</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
 
                     </div>
-                    <div class="item center">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/004-chicken-leg.png">
                         <h5>Chicken-leg</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
 
                     </div>
-                    <div class="item center">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/005-cocktail.png">
                         <h5>Energy Drink</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
 
                     </div>
-                    <div class="item center">
+                    <div class="item center sectionCategory-Item">
                         <img class="icon" src="Assets/img/icons/006-marin.png">
                         <h5>Shrimp</h5>
                         <img class="arrow" src="Assets/img/Other/arrow.png">
@@ -64,13 +65,44 @@
                 </div>
             </div>
         </section>
-        <section id="AboutUs-Img"></section>
+
+<!-- About Us IMG -->
+
+        <section id="AboutUs-Img">
+
+        <!-- Container with max 1400px -->
+
+            <div class="container">
+                
+                <!-- Wrapper to position grid in absolute -->
+
+                <div id="sectionAboutsUsImg-GridWrapper">
+
+                <!-- Grid with IMG as item -->
+
+                    <div class="sectionGrid" id="gridAboutUsImg">
+
+                        <div class="item sectionAboutUsImg-Item">
+                            <img id="gridAboutUsImg-Pancakes" alt="pancakes" src="Assets/img/gallery/imgfood1.png">
+                        </div>
+                        <div class="item sectionAboutUsImg-Item">
+                            <img alt="salad" src="Assets/img/gallery/imgfood2.jpg">
+                        </div>
+                        <div class="item sectionAboutUsImg-Item">
+                            <img alt="eggs" src="Assets/img/gallery/imgfood3.png">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section id="AboutUs-Text"></section>
         <section id="SpecialOffers"></section>
         <section id="Gallery"></section>
         <section id="Chefs"></section>
         <section id="News"></section>
-
+    </div>
     </main>
     <footer></footer>
 </body>
