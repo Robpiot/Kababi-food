@@ -29,7 +29,13 @@ header {
         li  {
             #phoneLogo {
                 width: 6%;
-            };
+            } 
+        }
+        li:hover {
+            color : $secondaryColor;
+        }
+        a{
+            all: unset;
         }
     }
     .logo-burger{
