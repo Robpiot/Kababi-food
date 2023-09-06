@@ -174,7 +174,9 @@ header .contact {
   height: 100vh;
 }
 .BestQualityFoods h1 {
+  flex-wrap: nowrap;
   color: #ffffff;
   font-family: "wondar-quason, sans serif";
-  font-size: 40px;
+  font-size: 100px;
+  align-self: flex-end;
 }/*# sourceMappingURL=Style.css.map */

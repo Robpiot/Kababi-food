@@ -6,8 +6,10 @@
         height : 100vh;
     }
     h1 {
+        flex-wrap: nowrap;
         color: $primaryColor;
         font-family: $titleFont;
-        font-size: 40px;
+        font-size: 100px;
+        align-self: flex-end;
     }
     }
