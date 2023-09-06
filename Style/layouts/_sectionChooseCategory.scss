@@ -119,7 +119,7 @@
         }
     }
 
-    @media screen and (min-width:1401px) {
+    @media screen and (min-width:1500px) {
  
         .sectionCategory-Item h5{
             font-size: 18px;
@@ -128,6 +128,8 @@
         // for the text background ot be aligned left
         .sectionBackgroundText{
             font-size: 110px;
+            padding-top:90px;
+        
         }
 
         .sectionText{
