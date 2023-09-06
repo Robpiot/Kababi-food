@@ -1,12 +1,24 @@
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: "TodesLight";
-  src: url("./Assets/fonts/Todes Light.ttf") format("ttf");
+  src: "./Assets/fonts/Todes Light.ttf" format("ttf");
 }
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
 
 @font-face {
   font-family: "TodesLight";
@@ -78,7 +90,7 @@ html {
 
 header {
   position: relative;
-  background: url(/Assets/img/slider/img_bg_slider_home01.jpg) no-repeat center center fixed;
+  background: url("../Assets/img/slider/img_bg_slider_home01.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flexbox;
   color: rgb(255, 255, 255);
