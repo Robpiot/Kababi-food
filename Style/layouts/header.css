@@ -1,0 +1,32 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flexbox;
+}
+.header nav {
+  display: grid;
+}
+.header ul {
+  grid-template-rows: 3;
+  justify-content: space-between;
+  margin: 12px;
+  list-style-type: none;
+}
+.header .logo-burger {
+  flex-direction: row;
+  justify-self: flex-start;
+}
+.header .menu {
+  display: inline-flex;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.header .contact {
+  display: inline-flex;
+  align-self: self-end;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=header.css.map */

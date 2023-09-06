@@ -1,0 +1,136 @@
+@import "../components/_container.scss";
+
+html {
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    background: url(/Assets/img/slider/img_bg_slider_home01.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    
+    
+    display: flexbox;
+    color : $primaryColor;
+    
+    nav {
+        display: grid;
+        grid-template-rows: 3;
+        grid-template-columns: 5;
+        
+    } ul {
+       
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 12px;
+        list-style-type: none;
+        li  {
+            #phoneLogo {
+                width: 6%;
+            };
+        }
+    }
+    .logo-burger{
+        flex-direction: row;
+        justify-self: flex-start; 
+    }
+    .menu {
+        display: none;
+    } .contact {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav:hover{
+        .menu   {
+            display: inline-flex;
+            align-self: center;
+            flex-wrap: wrap;  
+            
+        } .contact {
+            display: inline-flex;
+            align-self: flex-end;
+            flex-wrap: nowrap;  
+            flex-direction: row;
+        }
+           
+            
+        
+            
+        } li:hover {
+            color : $secondaryColor;
+        }
+        a{
+            all: unset;
+        }
+    } 
+
+
+     
+    
+    @media screen and (min-width: 481px)  {
+        header {
+            position: relative;
+            display: grid;
+            color : $primaryColor;
+            
+            nav {
+                display: grid;
+                grid-template-rows: 10%;
+                grid-template-columns: 20% 20% 20% 20% 20% ;
+                
+            } ul {
+               
+                justify-content: space-around;
+                align-items: baseline;
+                margin: 12px;
+                list-style-type: none;
+                li  {
+                    #phoneLogo {
+                        width: 16%;
+                    };
+                }
+            }
+            .logo-burger{
+                flex-direction: row;
+                justify-self: flex-start; 
+                
+            }
+            .menu   {
+                
+                display: inline-flex;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                justify-content: space-evenly;
+                justify-items: flex-start;
+                margin: 5%;
+                
+               
+                
+                
+            } .contact {
+                grid-column: 5;
+                display: inline-flex;
+                justify-self: stretch;
+                flex-wrap: nowrap;  
+                flex-direction: row;
+                margin: 5%;
+               
+               
+                
+             .phoneLine {
+                display: flex;
+                flex-wrap: nowrap;
+                
+            
+            } li:hover {
+                color : $secondaryColor;
+            }
+            a{
+                all: unset;
+            }
+    }} }

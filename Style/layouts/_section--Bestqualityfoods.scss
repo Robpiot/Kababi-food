@@ -1,0 +1,15 @@
+@import "../components/_container.scss";
+
+.BestQualityFoods {
+    display: flex;
+    html {
+        height : 100vh;
+    }
+    h1 {
+        flex-wrap: nowrap;
+        color: $primaryColor;
+        font-family: $titleFont;
+        font-size: 100px;
+        align-self: flex-end;
+    }
+    }

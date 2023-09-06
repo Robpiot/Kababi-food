@@ -1,14 +1,13 @@
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
 @import url("https://fonts.cdnfonts.com/css/wondar-quason-free");
-* {
-  padding: 0;
-  margin: 0;
-}
-
 @font-face {
   font-family: "TodesLight";
-  src: "./Assets/fonts/Todes Light.ttf" format("ttf");
+  src: url("./Assets/fonts/Todes Light.ttf") format("ttf");
 }
+* {
+  padding: 0;
+  margin: 0; }
+
 @font-face {
   font-family: "TodesLight";
   src: "./Assets/fonts/Todes Light.ttf" format("ttf");
@@ -36,6 +35,25 @@ p {
   font-size: 1.5vw;
 }
 
+#BAT {
+  width: 120px;
+  display: flex;
+  position: relative;
+  background-color: rgb(200, 169, 105);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  justify-content: space-around;
+  border: none;
+  border-radius: 0.3125rem;
+  margin: 0.5rem;
+  padding: 0.6rem;
+}
+#BAT img {
+  width: 9%;
+  align-self: center;
+  filter: invert(500%) contrast(500%);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -43,6 +61,144 @@ p {
 
 .container > * {
   max-width: 1400px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container > * {
+  max-width: 1400px;
+}
+
+html {
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  background: url(/Assets/img/slider/img_bg_slider_home01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flexbox;
+  color: rgb(255, 255, 255);
+}
+header nav {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 5;
+}
+header ul {
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 12px;
+  list-style-type: none;
+}
+header ul li #phoneLogo {
+  width: 6%;
+}
+header .logo-burger {
+  flex-direction: row;
+  justify-self: flex-start;
+}
+header .menu {
+  display: none;
+}
+header .contact {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .nav:hover .menu {
+    display: inline-flex;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  .nav:hover .contact {
+    display: inline-flex;
+    align-self: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  li:hover {
+    color: rgb(200, 169, 105);
+  }
+  a {
+    all: unset;
+  }
+}
+@media screen and (min-width: 481px) {
+  header {
+    position: relative;
+    display: grid;
+    color: rgb(255, 255, 255);
+  }
+  header nav {
+    display: grid;
+    grid-template-rows: 10%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  header ul {
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 12px;
+    list-style-type: none;
+  }
+  header ul li #phoneLogo {
+    width: 16%;
+  }
+  header .logo-burger {
+    flex-direction: row;
+    justify-self: flex-start;
+  }
+  header .menu {
+    display: inline-flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+    margin: 5%;
+  }
+  header .contact {
+    grid-column: 5;
+    display: inline-flex;
+    justify-self: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 5%;
+  }
+  header .contact .phoneLine {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  header .contact li:hover {
+    color: rgb(200, 169, 105);
+  }
+  header .contact a {
+    all: unset;
+  }
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container > * {
+  max-width: 1400px;
+}
+
+.BestQualityFoods {
+  display: flex;
+}
+.BestQualityFoods html {
+  height: 100vh;
+}
+.BestQualityFoods h1 {
+  flex-wrap: nowrap;
+  color: rgb(255, 255, 255);
+  font-family: "Wondar Quason Free", sans-serif;
+  font-size: 100px;
+  align-self: flex-end;
 }
 
 .sectionGrid {
