@@ -19,3 +19,22 @@
         };
     }
 
+    .buttonLayout{
+        background-color: rgb(200, 169, 105);
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0.3125rem;
+        padding: 3% 8%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.8vw;
+        img {
+            width: 9%;
+            vertical-align: middle;
+            margin-left: 7%;
+            -webkit-filter: invert(500%) contrast(500%);
+                    filter: invert(500%) contrast(500%);
+        };
+    }
+

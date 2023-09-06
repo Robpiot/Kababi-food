@@ -67,6 +67,24 @@ p {
   filter: invert(500%) contrast(500%);
 }
 
+.buttonLayout {
+  background-color: rgb(200, 169, 105);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 3% 8%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8vw;
+}
+.buttonLayout img {
+  width: 9%;
+  vertical-align: middle;
+  margin-left: 7%;
+  filter: invert(500%) contrast(500%);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -404,7 +422,7 @@ img {
   justify-content: start;
 }
 
-#AboutUs-TexteAndIcon-Wrapper {
+#AboutUs-TextAndIcon-Wrapper {
   position: relative;
 }
 
@@ -417,4 +435,37 @@ img {
 #AboutUs-Icon {
   float: right;
   width: 27%;
+}
+
+#AboutUs-Content-Wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 75% 25%;
+  margin-top: 5%;
+}
+
+#AboutUs-Content-ImgWrapper {
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+#AboutUs-Content-TextWrapper {
+  grid-column: 3;
+  padding-top: 7%;
+}
+
+#AboutUs-Content-Img {
+  float: left;
+  width: 80%;
+  margin-right: 5%;
+}
+
+#AboutUs-Content-Text {
+  text-align: left;
+  line-height: 200%;
+}
+
+#AboutUs-Content-ButtonWrapper {
+  grid-column: 3;
+  grid-row: 2;
 }/*# sourceMappingURL=Style.css.map */

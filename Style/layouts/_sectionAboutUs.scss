@@ -1,5 +1,5 @@
 
-#AboutUs-TexteAndIcon-Wrapper{
+#AboutUs-TextAndIcon-Wrapper{
     position: relative;
     }
     
@@ -14,5 +14,36 @@
         float: right;
         width: 27%;
     }
+
+    #AboutUs-Content-Wrapper{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows:75% 25%;
+        margin-top: 5%;
+    }
+
+#AboutUs-Content-ImgWrapper{
+    grid-column: 2;
+    grid-row:span 2;
+}
+
+#AboutUs-Content-TextWrapper{
+    grid-column: 3;
+    padding-top: 7%;
+}
+
+    #AboutUs-Content-Img{
+        float:left;
+        width:80%;
+        margin-right:5%;
+    }
+
+    #AboutUs-Content-Text{
+        text-align: left;
+        line-height: 200%;
+    }
    
-    
+    #AboutUs-Content-ButtonWrapper{
+        grid-column: 3;
+        grid-row:2;
+    }
