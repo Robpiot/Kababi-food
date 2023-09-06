@@ -24,12 +24,13 @@ body {
   font-family: "TodesLight";
   src: "./Assets/fonts/Todes Light.ttf" format("ttf");
 }
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
   padding: 1%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Wondar Quason Free", sans-serif;
+  white-space: nowrap;
 }
 
 h5 {
@@ -401,4 +402,19 @@ img {
   grid-column: 4;
   grid-row: 2;
   justify-content: start;
+}
+
+#AboutUs-TexteAndIcon-Wrapper {
+  position: relative;
+}
+
+#AboutUs-IconWrapper {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+#AboutUs-Icon {
+  float: right;
+  width: 27%;
 }/*# sourceMappingURL=Style.css.map */
