@@ -62,6 +62,8 @@ html {
 
 header {
   position: relative;
+  background: url(/Assets/img/slider/img_bg_slider_home01.jpg) no-repeat center center fixed;
+  background-size: cover;
   display: flexbox;
   color: #ffffff;
 }
@@ -102,21 +104,16 @@ header .contact {
     flex-wrap: nowrap;
     flex-direction: row;
   }
-  .nav:hover .phoneLine {
-    display: block;
-    flex-direction: row;
-  }
-  .nav:hover li:hover {
+  li:hover {
     color: #c8a969;
   }
-  .nav:hover a {
+  a {
     all: unset;
   }
 }
 @media screen and (min-width: 481px) {
   header {
     position: relative;
-    background-image: url(/Assets/img/slider/img_bg_slider_home01.jpg);
     display: grid;
     color: #ffffff;
   }
@@ -144,6 +141,7 @@ header .contact {
     grid-column-end: 4;
     justify-content: space-evenly;
     justify-items: flex-start;
+    margin: 5%;
   }
   header .contact {
     grid-column: 5;
@@ -151,16 +149,32 @@ header .contact {
     justify-self: stretch;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin: auto;
+    margin: 5%;
   }
-  header .phoneLine {
-    display: block;
-    flex-direction: row;
+  header .contact .phoneLine {
+    display: flex;
+    flex-wrap: nowrap;
   }
-  header li:hover {
+  header .contact li:hover {
     color: #c8a969;
   }
-  header a {
+  header .contact a {
     all: unset;
   }
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.BestQualityFoods {
+  display: flex;
+}
+.BestQualityFoods html {
+  height: 100vh;
+}
+.BestQualityFoods h1 {
+  color: #ffffff;
+  font-family: "wondar-quason, sans serif";
+  font-size: 40px;
 }/*# sourceMappingURL=Style.css.map */
