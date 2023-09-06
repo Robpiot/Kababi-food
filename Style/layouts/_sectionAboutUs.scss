@@ -18,7 +18,6 @@
     #AboutUs-Content-Wrapper{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows:75% 25%;
         margin-top: 5%;
     }
 
@@ -46,4 +45,11 @@
     #AboutUs-Content-ButtonWrapper{
         grid-column: 3;
         grid-row:2;
+        position:relative
+    }
+
+    #AboutUs-Content-Button{
+        position:absolute;
+        left:0;
+        top:-50%;
     }

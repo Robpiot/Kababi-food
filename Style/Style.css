@@ -72,11 +72,14 @@ p {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   border: none;
-  border-radius: 0.3125rem;
-  padding: 3% 8%;
+  border-radius: 5%;
+  padding: 3% 4%;
   font-weight: bold;
   text-align: center;
   font-size: 0.8vw;
+}
+.buttonLayout .textButton {
+  vertical-align: middle;
 }
 .buttonLayout img {
   width: 9%;
@@ -440,7 +443,6 @@ img {
 #AboutUs-Content-Wrapper {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 75% 25%;
   margin-top: 5%;
 }
 
@@ -468,4 +470,11 @@ img {
 #AboutUs-Content-ButtonWrapper {
   grid-column: 3;
   grid-row: 2;
+  position: relative;
+}
+
+#AboutUs-Content-Button {
+  position: absolute;
+  left: 0;
+  top: -50%;
 }/*# sourceMappingURL=Style.css.map */
