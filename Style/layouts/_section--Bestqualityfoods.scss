@@ -2,14 +2,41 @@
 
 .BestQualityFoods {
     display: flex;
+    margin :0%;
+    padding : 10%;
     html {
         height : 100vh;
-    }
-    h1 {
-        flex-wrap: nowrap;
-        color: $primaryColor;
-        font-family: $titleFont;
-        font-size: 100px;
-        align-self: flex-end;
+
     }
     }
+    .BQF-title {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        .text-bqf {
+            position: relative;
+            flex-wrap: nowrap;
+            color: $primaryColor;
+            font-family: $titleFont;
+            font-size: 5vw;
+            align-self: flex-end;
+            text-transform: capitalize;
+            width : 60%;
+        }
+        .watermark {
+            position: relative;
+            left: 20%;
+            bottom: 10%;
+            
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+    .BQF-play {
+        width: 70%;
+        display: flex;
+    }
+
+
