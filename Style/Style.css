@@ -427,8 +427,8 @@ header .contact {
 
 #AboutUs-IconWrapper {
   position: absolute;
-  top: 40%;
-  right: 10%;
+  top: 50%;
+  right: 13%;
 }
 
 #AboutUs-Icon {
@@ -478,6 +478,13 @@ header .contact {
 }
 
 @media screen and (min-width: 1401px) {
+  #AboutUs-IconWrapper {
+    top: 125px;
+    right: 210px;
+  }
+  #AboutUs-IconWrapper #AboutUs-Icon {
+    width: 75%;
+  }
   #AboutUs-Content-TextWrapper {
     max-height: 320px;
   }

@@ -1,81 +1,93 @@
-
-#AboutUs-TextAndIcon-Wrapper{
+#AboutUs-TextAndIcon-Wrapper {
     position: relative;
-    }
-    
-    #AboutUs-IconWrapper{
-        position: absolute;
-        top: 40%;
-        right: 10%;
-      
-    }
-    
-    #AboutUs-Icon{
-        float: right;
-        width: 8vw;
-    }
-
-    #AboutUs-Content-Wrapper{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        margin-top: 5%;
-        padding-bottom: 5%;
-    }
-
-#AboutUs-Content-ImgWrapper{
-    grid-column: 2;
-    grid-row:span 2;
 }
 
-#AboutUs-Content-TextWrapper{
+#AboutUs-IconWrapper {
+    position: absolute;
+    top: 50%;
+    right: 13%;
+
+}
+
+#AboutUs-Icon {
+    float: right;
+    width: 8vw;
+}
+
+#AboutUs-Content-Wrapper {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+#AboutUs-Content-ImgWrapper {
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+#AboutUs-Content-TextWrapper {
     grid-column: 3;
     padding-top: 7%;
 }
 
-    #AboutUs-Content-Img{
-        float:left;
-        width:80%;
-        margin-right:5%;
-        padding: 5% 0;;
-    }
+#AboutUs-Content-Img {
+    float: left;
+    width: 80%;
+    margin-right: 5%;
+    padding: 5% 0;
+    ;
+}
 
-    #AboutUs-Content-Text{
-        text-align: left;
-        line-height: 200%;
-    }
-   
-    #AboutUs-Content-ButtonWrapper{
-        grid-column: 3;
-        grid-row:2;
-        position:relative
-    }
+#AboutUs-Content-Text {
+    text-align: left;
+    line-height: 200%;
+}
 
-    #AboutUs-Content-Button{
-        position:absolute;
-        left:0;
-        top:-50%;
-    }
+#AboutUs-Content-ButtonWrapper {
+    grid-column: 3;
+    grid-row: 2;
+    position: relative
+}
 
-    @media screen and (min-width: 1401px){
-        #AboutUs-Content-TextWrapper {
-            max-height: 320px;
+#AboutUs-Content-Button {
+    position: absolute;
+    left: 0;
+    top: -50%;
+}
 
-            #AboutUs-Content-Text{
-                font-size: 22px;
-            }
+@media screen and (min-width: 1401px) {
+    #AboutUs-IconWrapper {
+
+
+        top: 125px;
+        right: 210px;
+
+        #AboutUs-Icon {
+            width: 75%;
         }
 
-        #AboutUs-Content-ButtonWrapper{
-            max-height: 60px;
-            padding:11px 14px;
-
-            span{
-                font-size: 11px;
-
-            }
-        }
-
-        
-
-        
     }
+
+    #AboutUs-Content-TextWrapper {
+        max-height: 320px;
+
+        #AboutUs-Content-Text {
+            font-size: 22px;
+        }
+    }
+
+    #AboutUs-Content-ButtonWrapper {
+        max-height: 60px;
+        padding: 11px 14px;
+
+        span {
+            font-size: 11px;
+
+        }
+    }
+
+
+
+
+}
