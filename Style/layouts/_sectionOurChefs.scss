@@ -1,0 +1,30 @@
+#Chefs{
+    background-image: url("../Assets/img/our-chefs/imgbg-ourchefs.jpg");
+    background-size: 109% 107%;
+    background-position: 49% 18%;
+    background-repeat: no-repeat;
+
+    .sectionText{
+        color:white;
+    }
+}
+
+#ourChefs-Grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr ;
+  
+    gap: 3%;
+    column-gap: 2%;
+        .item:nth-child(odd){
+            grid-column: 2;
+        }
+
+        .item:nth-child(even){
+            grid-column: 3;
+        }
+    padding:5% 0;
+
+    img{
+        width:100%;
+    }
+}
