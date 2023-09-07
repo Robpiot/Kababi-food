@@ -827,6 +827,8 @@ header .contact {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 5% 15%;
+    -moz-column-gap: 2%;
+         column-gap: 2%;
   }
   #blog-Grid img {
     width: 100%;
