@@ -812,4 +812,23 @@ header .contact {
   #ourChefs-Grid img {
     width: 100%;
   }
+}
+#blog-Grid {
+  display: grid;
+  grid-template-columns: 30%;
+  margin: 5% 0;
+}
+#blog-Grid img {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  #blog-Grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5% 15%;
+  }
+  #blog-Grid img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Style.css.map */
