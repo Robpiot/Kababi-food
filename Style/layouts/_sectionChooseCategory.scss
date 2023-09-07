@@ -112,11 +112,6 @@
         .sectionCategory-Item h5{
             font-size: 1vw;
         }
-
-        // for the text background ot be aligned left
-        .sectionBackgroundText{
-            font-size: 6vw;
-        }
     }
 
     @media screen and (min-width:1500px) {
@@ -125,23 +120,8 @@
             font-size: 18px;
         }
 
-        // for the text background ot be aligned left
-        .sectionBackgroundText{
-            font-size: 110px;
-            padding-top:90px;
         
-        }
 
-        .sectionText{
-            padding-top:9%;
-            h3{
-                font-size:40px;
-            }
-
-            p{
-                font-size:25px ;
-            }
-        }
 
         #categoryGrid{
             padding-top: 4%;

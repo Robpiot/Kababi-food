@@ -90,4 +90,21 @@ padding:3%;
       
       }
     
+      @media screen and (min-width: 1401px){
+
+        .item{
+            h5{
+                font-size:22px;
+            }
+
+            .specialOfferDescription{
+                font-size:15px;
+            }
+
+            .price{
+                font-size:46px;
+            }
+        }
+      }
+
 }

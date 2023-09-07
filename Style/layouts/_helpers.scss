@@ -1,10 +1,22 @@
-.sectionGrid{
-    display:grid;
+.sectionGrid {
+    display: grid;
 }
 
 
 .sectionText {
     padding-top: 7%;
+
+    @media screen and (min-width:1401px) {
+        padding-top: 9%;
+
+        h3 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
 }
 
 .sectionText p {
@@ -18,8 +30,24 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 8vw;
-    ;
+
+    @media screen and (min-width:1200px) {
+
+        // for the text background ot be aligned left
+        font-size: 6vw;
+    }
+
+    @media screen and (min-width:1401px) {
+        // for the text background ot be aligned left
+        font-size: 110px;
+        padding-top: 90px;
+
+    }
+
 }
+
+
+
 
 
 .center {
@@ -27,4 +55,3 @@
     text-align: center;
 
 }
-

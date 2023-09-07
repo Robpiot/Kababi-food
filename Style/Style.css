@@ -415,6 +415,17 @@ header .contact {
 .sectionText {
   padding-top: 7%;
 }
+@media screen and (min-width: 1401px) {
+  .sectionText {
+    padding-top: 9%;
+  }
+  .sectionText h3 {
+    font-size: 40px;
+  }
+  .sectionText p {
+    font-size: 25px;
+  }
+}
 
 .sectionText p {
   padding-top: 0;
@@ -427,6 +438,17 @@ header .contact {
   text-transform: uppercase;
   text-align: left;
   font-size: 8vw;
+}
+@media screen and (min-width: 1200px) {
+  .sectionBackgroundText {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .sectionBackgroundText {
+    font-size: 110px;
+    padding-top: 90px;
+  }
 }
 
 .center {
@@ -525,26 +547,10 @@ header .contact {
   .sectionCategory-Item h5 {
     font-size: 1vw;
   }
-  .sectionBackgroundText {
-    font-size: 6vw;
-  }
 }
 @media screen and (min-width: 1025px) and (min-width: 1500px) {
   .sectionCategory-Item h5 {
     font-size: 18px;
-  }
-  .sectionBackgroundText {
-    font-size: 110px;
-    padding-top: 90px;
-  }
-  .sectionText {
-    padding-top: 9%;
-  }
-  .sectionText h3 {
-    font-size: 40px;
-  }
-  .sectionText p {
-    font-size: 25px;
   }
   #categoryGrid {
     padding-top: 4%;
@@ -753,5 +759,16 @@ header .contact {
   }
   #SpecialOffer-Img-Bread {
     height: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1401px) {
+  .item h5 {
+    font-size: 22px;
+  }
+  .item .specialOfferDescription {
+    font-size: 15px;
+  }
+  .item .price {
+    font-size: 46px;
   }
 }/*# sourceMappingURL=Style.css.map */
