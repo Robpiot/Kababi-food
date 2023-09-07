@@ -7,7 +7,6 @@ p, h1,h2,h3,h4,h5,h6{
 
 h1,h2,h3,h4,h5,h6{
    font-family: $titleFont ;
-   white-space: nowrap;
 }
 
 h5{
@@ -22,4 +21,11 @@ h3{
 p{
     font-family: $paragraphFont ;
    font-size: 1.5vw;
+}
+
+.sectionBackgroundText{
+    
+        font-family: $titleFont ;
+        white-space: nowrap;
+     
 }
