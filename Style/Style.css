@@ -161,6 +161,11 @@ html {
   height: 100vh;
 }
 
+#phoneNumber {
+  white-space: nowrap;
+  margin-right: 1%;
+}
+
 header {
   position: relative;
   background: url("../Assets/img/slider/img_bg_slider_home01.jpg") no-repeat center center fixed;
@@ -178,6 +183,7 @@ header ul {
   align-items: baseline;
   margin: 12px;
   list-style-type: none;
+  font-size: 1.5vw;
 }
 header ul li #phoneLogo {
   width: 6%;
@@ -187,6 +193,10 @@ header ul :hover {
 }
 header ul a {
   all: unset;
+  font-size: 1.5vw;
+}
+header ul button {
+  font-size: 1.5vw;
 }
 header .logo-burger {
   flex-direction: row;
@@ -253,20 +263,22 @@ header .contact {
   header .contact {
     grid-column: 5;
     display: inline-flex;
-    justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin-top: 50%;
+    margin-top: 5%;
     padding-top: 15%;
+    gap: 21%;
+    align-content: end;
+    justify-content: end;
   }
-  header .contact .phoneLine {
+  header .phoneLine {
     display: flex;
     flex-wrap: nowrap;
   }
-  header .contact li:hover {
+  header li:hover {
     color: rgb(200, 169, 105);
   }
-  header .contact a {
+  header a {
     all: unset;
   }
 }
