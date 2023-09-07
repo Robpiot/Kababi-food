@@ -30,7 +30,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Wondar Quason Free", sans-serif;
-  white-space: nowrap;
 }
 
 h5 {
@@ -46,6 +45,11 @@ h3 {
 p {
   font-family: "TodesLight", sans-serif;
   font-size: 1.5vw;
+}
+
+.sectionBackgroundText {
+  font-family: "Wondar Quason Free", sans-serif;
+  white-space: nowrap;
 }
 
 #Header-Content-button {
