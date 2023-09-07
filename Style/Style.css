@@ -499,14 +499,59 @@ header .contact {
     font-size: 11px;
   }
 }
+.price {
+  font-family: "Wondar Quason Free", sans-serif;
+  color: rgb(200, 169, 105);
+  font-size: 3vw;
+  grid-column: 2;
+  grid-row: 1/3;
+  text-align: end;
+  font-weight: 50;
+}
+
+.specialOfferDescription {
+  font-size: 1vw;
+  display: inline;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.specialOfferItem {
+  border-radius: 3%;
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+#SpecialOffer-Grid {
+  display: grid;
+  margin: 5% 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2%;
+}
+#SpecialOffer-Grid .item {
+  grid-column: 3/5;
+}
+
 #SpecialOffer-Img-Bread {
   position: absolute;
   right: 0;
   top: 0;
   width: 32%;
+  z-index: -1;
+}
+
+#SpecialOffer-Img-Steak {
+  position: absolute;
+  left: 0;
+  bottom: -14%;
+  width: 14%;
 }
 
 #SpecialOffer {
   position: relative;
   background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2));
+  padding-bottom: 5%;
 }/*# sourceMappingURL=Style.css.map */
