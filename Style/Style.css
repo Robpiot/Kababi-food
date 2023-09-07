@@ -258,10 +258,6 @@ header .contact {
   text-align: center;
 }
 
-img {
-  padding: 5% 0;
-}
-
 .sectionCategory-Item {
   background-color: #ffffff;
   margin: 1%;
@@ -437,13 +433,14 @@ img {
 
 #AboutUs-Icon {
   float: right;
-  width: 27%;
+  width: 8vw;
 }
 
 #AboutUs-Content-Wrapper {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   margin-top: 5%;
+  padding-bottom: 5%;
 }
 
 #AboutUs-Content-ImgWrapper {
@@ -460,6 +457,7 @@ img {
   float: left;
   width: 80%;
   margin-right: 5%;
+  padding: 5% 0;
 }
 
 #AboutUs-Content-Text {
@@ -477,4 +475,31 @@ img {
   position: absolute;
   left: 0;
   top: -50%;
+}
+
+@media screen and (min-width: 1401px) {
+  #AboutUs-Content-TextWrapper {
+    max-height: 320px;
+  }
+  #AboutUs-Content-TextWrapper #AboutUs-Content-Text {
+    font-size: 22px;
+  }
+  #AboutUs-Content-ButtonWrapper {
+    max-height: 60px;
+    padding: 11px 14px;
+  }
+  #AboutUs-Content-ButtonWrapper span {
+    font-size: 11px;
+  }
+}
+#SpecialOffer-Img-Bread {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32%;
+}
+
+#SpecialOffer {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2));
 }/*# sourceMappingURL=Style.css.map */
