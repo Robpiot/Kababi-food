@@ -28,7 +28,7 @@ padding:3%;
     display:grid;
     margin:5% 0;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:2%;
+    gap:3%;
 
     .item{
         grid-column: 3/5;
@@ -40,19 +40,54 @@ padding:3%;
     right:0;
     top:0;
     width:32%;
-    z-index:-1;
 }
 
 #SpecialOffer-Img-Steak{
     position: absolute;
   left: 0;
   bottom: -14%;
-  width:14%;
+  width:15%;
 
 }
 
 #SpecialOffer{
     position:relative;
     background-image: linear-gradient(to right, rgba(200, 169, 105, 0.2), rgba(200, 169, 105, 0.2));
-    padding-bottom: 5%;
+    padding-bottom: 9%;
+    z-index:-2;
+    img {
+        z-index: -1;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+
+    #SpecialOffer-Grid{
+
+        grid-template-columns: 1fr 3fr 3fr 1fr ;
+  
+    row-gap: 5%;
+    column-gap: 2%;
+        .item:nth-child(odd){
+            grid-column: 2;
+        }
+
+        .item:nth-child(even){
+            grid-column: 3;
+        }
+    }
+
+    #SpecialOffer-Img-Steak{
+        
+      bottom: -24%;
+    
+    }
+
+    #SpecialOffer-Img-Bread{
+        
+        height:100%;
+      
+      }
+    
 }
