@@ -1,44 +1,53 @@
+#Header-Content-button {
+    width : 120px;
+    display: flex;
+    position: relative;
+    background-color: $secondaryColor;
+    color : $primaryColor;
+    text-transform:uppercase ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border : none;
+    border-radius: 5%;
+    
+    padding:  3% 4%;
+    font-size: 9px;
+    img {
+        width: 9%;
+        align-self: center;
+        -webkit-filter: invert(500%) contrast(500%);
+                filter: invert(500%) contrast(500%);
+    };
+}
 
-    #BAT {
-        width : 120px;
-        display: flex;
-        position: relative;
-        background-color: $secondaryColor;
-        color : $primaryColor;
-        text-transform:uppercase ;
-        justify-content: space-around;
-        border : none;
-        border-radius: .3125rem;
-        margin: 0.5rem;
-        padding:  0.600rem;
-        img {
-            width: 9%;
-            align-self: center;
-            -webkit-filter: invert(500%) contrast(500%);
-                    filter: invert(500%) contrast(500%);
-        };
+
+.buttonLayout{
+    background-color: rgb(200, 169, 105);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: none;
+    border-radius:5%;
+    padding: 3% 4%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8vw;
+
+    .textButton{
+        vertical-align: middle;
     }
+    img {
+        width: 9%;
+        vertical-align: middle;
+        margin-left: 7%;
+        -webkit-filter: invert(500%) contrast(500%);
+                filter: invert(500%) contrast(500%);
+    };
+}
 
-    .buttonLayout{
-        background-color: rgb(200, 169, 105);
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        border: none;
-        border-radius:5%;
-        padding: 3% 4%;
-        font-weight: bold;
-        text-align: center;
-        font-size: 0.8vw;
-
-        .textButton{
-            vertical-align: middle;
-        }
-        img {
-            width: 9%;
-            vertical-align: middle;
-            margin-left: 7%;
-            -webkit-filter: invert(500%) contrast(500%);
-                    filter: invert(500%) contrast(500%);
-        };
-    }
-
+#Header-Content-button2 {
+    @extend .buttonLayout;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 12px;
+}
