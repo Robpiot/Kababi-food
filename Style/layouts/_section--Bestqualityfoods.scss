@@ -1,42 +1,215 @@
 @import "../components/_container.scss";
-
-.BestQualityFoods {
-    display: flex;
-    margin :0%;
-    padding : 10%;
-    html {
-        height : 100vh;
-
-    }
-    }
-    .BQF-title {
-        width: 30%;
+@media screen and (max-width : 1400px)
+{
+    .BestQualityFoods {
         display: flex;
-        justify-content: space-between;
-        .text-bqf {
-            position: relative;
-            flex-wrap: nowrap;
-            color: $primaryColor;
-            font-family: $titleFont;
-            font-size: 5vw;
-            align-self: flex-end;
-            text-transform: capitalize;
-            width : 60%;
+        margin :0%;
+        padding : 10%;
+        html {
+            height : 100vh;
+    
         }
-        .watermark {
-            position: relative;
-            left: 20%;
-            bottom: 10%;
-            
-            img {
-                width: 100%;
-
+        }
+        .BQF-title {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            .text-bqf {
+                position: relative;
+                flex-wrap: nowrap;
+                color: $primaryColor;
+                font-family: $titleFont;
+                font-size: 5vw;
+                align-self: flex-end;
+                text-transform: capitalize;
+                width : 60%;
+            }
+            .watermark {
+                position: relative;
+                left: 20%;
+                bottom: 10%;
+                
+                img {
+                    width: 100%;
+    
+                }
             }
         }
-    }
-    .BQF-play {
-        width: 70%;
+        .BQF-play {
+            width: 5%;
+            height: 8%;
+            padding: 2%;
+            display: flex;
+            color : $secondaryColor;
+            position: absolute;
+            right : 12%;
+            bottom: 25%;
+            justify-content: center;
+            align-self: center;
+            background-color: $primaryColor;
+                text-align: center;
+                align-items: center;
+               
+                
+            font-size: 1.5vw;
+            
+            border-radius: 50%;
+            border: 1px double #ffffff;
+            h2 {
+                position: relative;
+                height : auto;
+                width: auto;
+                border-radius: 50%;
+                border: 0.5px solid #ffffff;
+                padding :125%;
+            }
+            
+            
+        }
+}
+
+
+@media screen and (min-width: 1400px)  {
+    .BestQualityFoods {
         display: flex;
-    }
+        margin :0%;
+        padding : 10%;
+        html {
+            height : 100vh;
+    
+        }
+        }
+        .BQF-title {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            .text-bqf {
+                position: relative;
+                flex-wrap: nowrap;
+                color: $primaryColor;
+                font-family: $titleFont;
+                font-size: 5vw;
+                align-self: flex-end;
+                text-transform: capitalize;
+                width : 60%;
+            }
+            .watermark {
+                position: relative;
+                left: 20%;
+                bottom: 10%;
+                
+                img {
+                    width: 100%;
+    
+                }
+            }
+        }
+        .BQF-play {
+            width: 5%;
+            height: 8%;
+            padding: 2%;
+            display: flex;
+            color : $secondaryColor;
+            position: absolute;
+            right : 12%;
+            bottom: 25%;
+            justify-content: center;
+            align-self: center;
+            background-color: $primaryColor;
+                text-align: center;
+                align-items: center;
+               
+                
+            font-size: 1.5vw;
+            
+            border-radius: 50%;
+            border: 1px double #ffffff;
+            h2 {
+                position: relative;
+                height : auto;
+                width: auto;
+                border-radius: 50%;
+                border: 0.5px solid #ffffff;
+                padding :125%;
+            }
+            
+            
+        }
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+    .BestQualityFoods {
+        display: flex;
+        margin :0%;
+        padding : 10%;
+        html {
+            height : 100vh;
+    
+        }
+        }
+        .BQF-title {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            .text-bqf {
+                position: relative;
+                flex-wrap: nowrap;
+                color: $primaryColor;
+                font-family: $titleFont;
+                font-size: 60px;
+                align-self: flex-end;
+                text-transform: capitalize;
+                width : 60%;
+            }
+            .watermark {
+                position: relative;
+                left: 20%;
+                bottom: 10%;
+                
+                img {
+                    width: 100%;
+    
+                }
+            }
+        }
+        .BQF-play {
+            width: 5%;
+            height: 8%;
+            padding: 2%;
+            display: flex;
+            color : $secondaryColor;
+            position: absolute;
+            right : 12%;
+            bottom: 25%;
+            justify-content: center;
+            align-self: center;
+            background-color: $primaryColor;
+                text-align: center;
+                align-items: center;
+               
+                
+            font-size: 1.5vw;
+            
+            border-radius: 50%;
+            border: 1px double #ffffff;
+            h2 {
+                position: relative;
+                height : auto;
+                width: auto;
+                border-radius: 50%;
+                border: 0.5px solid #ffffff;
+                padding :125%;
+            }
+            
+            
+        }
+    
+}
+
+
+
+    
 
 

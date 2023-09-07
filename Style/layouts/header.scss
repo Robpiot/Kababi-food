@@ -57,7 +57,7 @@ header {
             
         } .contact {
             display: inline-flex;
-            align-self: flex-end;
+            align-self: flex;
             flex-wrap: nowrap;  
             flex-direction: row;
         }
@@ -95,7 +95,7 @@ header {
                 list-style-type: none;
                 li  {
                     #phoneLogo {
-                        width: 16%;
+                        width: 13%;
                     };
                 }
             }
@@ -111,7 +111,7 @@ header {
                 grid-column-end: 4;
                 justify-content: space-evenly;
                 justify-items: flex-start;
-                margin: 5%;
+                margin: 10%;
                 
                
                 
@@ -119,10 +119,12 @@ header {
             } .contact {
                 grid-column: 5;
                 display: inline-flex;
-                justify-self: stretch;
+                justify-content: space-around;
                 flex-wrap: nowrap;  
                 flex-direction: row;
-                margin: 5%;
+                margin-top: 50%;
+                padding-top: 15%;
+                
                
                
                 
