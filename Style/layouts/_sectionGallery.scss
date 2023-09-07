@@ -1,0 +1,131 @@
+// mobile device
+#Gallery-Grid {
+    height: 100vh;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%  ;
+    grid-template-rows: 33% 33% 33%;
+    // flex-wrap: wrap;
+    row-gap: 3%;
+   margin: 0 10% 0 0;
+   padding : 4%;
+    
+    
+    
+
+
+.div-content-dish {
+    background-image: url('/Assets/img/gallery/img1gallerybox.jpg');
+    background-repeat: no-repeat;
+    height: auto;
+    width : 100%;
+    grid-area: 1 / 2 / 1 / 4;
+    background-size: cover;
+}
+.div-content-sandwich {
+    background-image: url('/Assets/img/gallery/img2gallerybox.jpg') ;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 4 /1 /5 ;
+    background-size: cover;
+}
+.div-content-pizza {
+    background-image:url('/Assets/img/gallery/img3gallerybox.jpg') ;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    grid-area: 2/ 4 / 2 / 5 ;
+    top: 15%;
+    
+}
+.div-content-pasta {
+    background-image: url('/Assets/img/gallery/img4gallerybox.jpg');
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: 2/ 2 / 2 / 4 ;
+    
+}
+.div-content-steak {
+    background-image:url('/Assets/img/gallery/img5gallerybox.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: 3/ 2 / 3 / 3 ;
+    height: auto;
+    width: 100%;
+}
+.div-content-burger {
+    background-image: url('/Assets/img/gallery/img6gallerybox.jpg') ;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    grid-area: 3/ 3 / 3 / 5 ;
+} 
+}
+
+
+// tablet display
+@media screen and (min-width : 600px) {
+    #Gallery-Grid {
+        height: 50vh;
+        grid-template-columns: 10% 20% 20% 20% 20% 10%;
+        grid-template-rows: 50% 50%;
+        flex-wrap: nowrap;
+        
+        column-gap: 3%;
+        // padding : 8%;
+    .div-content-dish {
+        background-image: url('/Assets/img/gallery/img1gallerybox.jpg');
+        background-repeat: no-repeat;
+        height: auto;
+        width : 100%;
+        grid-area: 1 / 2 / 1 / 4;
+        background-size: contain;
+    }
+    .div-content-sandwich {
+        background-image: url('/Assets/img/gallery/img2gallerybox.jpg') ;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        grid-area: 1 / 4 /1 /5 ;
+        background-size: contain;
+    }
+    .div-content-pizza {
+        background-image:url('/Assets/img/gallery/img3gallerybox.jpg') ;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        grid-area: 1/ 5 / 1 / 6 ;
+       
+        
+    }
+    .div-content-pasta {
+        background-image: url('/Assets/img/gallery/img4gallerybox.jpg');
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-area: 2/ 2 / 2 / 3 ;
+        
+    }
+    .div-content-steak {
+        background-image:url('/Assets/img/gallery/img5gallerybox.jpg') ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-area: 2/ 3 / 2 / 4 ;
+        height: auto;
+        width: 100%;
+    }
+    .div-content-burger {
+        background-image: url('/Assets/img/gallery/img6gallerybox.jpg') ;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        grid-area: 2/ 4/ 2 / 6 ;
+    } 
+    }
+}

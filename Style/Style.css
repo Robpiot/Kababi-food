@@ -109,6 +109,54 @@ p {
   max-width: 1400px;
 }
 
+.sectionGrid {
+  display: grid;
+}
+
+.sectionText {
+  padding-top: 7%;
+}
+@media screen and (min-width: 1401px) {
+  .sectionText {
+    padding-top: 9%;
+  }
+  .sectionText h3 {
+    font-size: 40px;
+  }
+  .sectionText p {
+    font-size: 25px;
+  }
+}
+
+.sectionText p {
+  padding-top: 0;
+}
+
+.sectionBackgroundText {
+  padding-top: 5%;
+  position: absolute;
+  color: rgba(200, 169, 105, 0.1);
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 8vw;
+}
+@media screen and (min-width: 1200px) {
+  .sectionBackgroundText {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .sectionBackgroundText {
+    font-size: 110px;
+    padding-top: 90px;
+  }
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
 html {
   height: 100vh;
 }
@@ -349,113 +397,6 @@ header .contact {
     padding: 125%;
   }
 }
-@media screen and (min-width: 1400px) {
-  .BestQualityFoods {
-    display: flex;
-    margin: 0%;
-    padding: 10%;
-  }
-  .BestQualityFoods html {
-    height: 100vh;
-  }
-  .BQF-title {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .BQF-title .text-bqf {
-    position: relative;
-    flex-wrap: nowrap;
-    color: rgb(255, 255, 255);
-    font-family: "Wondar Quason Free", sans-serif;
-    font-size: 60px;
-    align-self: flex-end;
-    text-transform: capitalize;
-    width: 60%;
-  }
-  .BQF-title .watermark {
-    position: relative;
-    left: 20%;
-    bottom: 10%;
-  }
-  .BQF-title .watermark img {
-    width: 100%;
-  }
-  .BQF-play {
-    width: 5%;
-    height: 8%;
-    padding: 2%;
-    display: flex;
-    color: rgb(200, 169, 105);
-    position: absolute;
-    right: 12%;
-    bottom: 25%;
-    justify-content: center;
-    align-self: center;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    align-items: center;
-    font-size: 1.5vw;
-    border-radius: 50%;
-    border: 1px double #ffffff;
-  }
-  .BQF-play h2 {
-    position: relative;
-    height: auto;
-    width: auto;
-    border-radius: 50%;
-    border: 0.5px solid #ffffff;
-    padding: 125%;
-  }
-}
-.sectionGrid {
-  display: grid;
-}
-
-.sectionText {
-  padding-top: 7%;
-}
-@media screen and (min-width: 1401px) {
-  .sectionText {
-    padding-top: 9%;
-  }
-  .sectionText h3 {
-    font-size: 40px;
-  }
-  .sectionText p {
-    font-size: 25px;
-  }
-}
-
-.sectionText p {
-  padding-top: 0;
-}
-
-.sectionBackgroundText {
-  padding-top: 5%;
-  position: absolute;
-  color: rgba(200, 169, 105, 0.1);
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 8vw;
-}
-@media screen and (min-width: 1200px) {
-  .sectionBackgroundText {
-    font-size: 6vw;
-  }
-}
-@media screen and (min-width: 1401px) {
-  .sectionBackgroundText {
-    font-size: 110px;
-    padding-top: 90px;
-  }
-}
-
-.center {
-  justify-content: center;
-  text-align: center;
-}
-
 .sectionCategory-Item {
   background-color: #ffffff;
   margin: 1%;
@@ -770,6 +711,122 @@ header .contact {
   }
   .item .price {
     font-size: 46px;
+  }
+}
+#Gallery-Grid {
+  height: 100vh;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 33% 33% 33%;
+  row-gap: 3%;
+  margin: 0 10% 0 0;
+  padding: 4%;
+}
+#Gallery-Grid .div-content-dish {
+  background-image: url("/Assets/img/gallery/img1gallerybox.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  grid-area: 1/2/1/4;
+  background-size: cover;
+}
+#Gallery-Grid .div-content-sandwich {
+  background-image: url("/Assets/img/gallery/img2gallerybox.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  grid-area: 1/4/1/5;
+  background-size: cover;
+}
+#Gallery-Grid .div-content-pizza {
+  background-image: url("/Assets/img/gallery/img3gallerybox.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  grid-area: 2/4/2/5;
+  top: 15%;
+}
+#Gallery-Grid .div-content-pasta {
+  background-image: url("/Assets/img/gallery/img4gallerybox.jpg");
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: 2/2/2/4;
+}
+#Gallery-Grid .div-content-steak {
+  background-image: url("/Assets/img/gallery/img5gallerybox.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: 3/2/3/3;
+  height: auto;
+  width: 100%;
+}
+#Gallery-Grid .div-content-burger {
+  background-image: url("/Assets/img/gallery/img6gallerybox.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  grid-area: 3/3/3/5;
+}
+
+@media screen and (min-width: 600px) {
+  #Gallery-Grid {
+    height: 50vh;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50% 50%;
+    flex-wrap: nowrap;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+  #Gallery-Grid .div-content-dish {
+    background-image: url("/Assets/img/gallery/img1gallerybox.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    grid-area: 1/2/1/4;
+    background-size: contain;
+  }
+  #Gallery-Grid .div-content-sandwich {
+    background-image: url("/Assets/img/gallery/img2gallerybox.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    grid-area: 1/4/1/5;
+    background-size: contain;
+  }
+  #Gallery-Grid .div-content-pizza {
+    background-image: url("/Assets/img/gallery/img3gallerybox.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    grid-area: 1/5/1/6;
+  }
+  #Gallery-Grid .div-content-pasta {
+    background-image: url("/Assets/img/gallery/img4gallerybox.jpg");
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: 2/2/2/3;
+  }
+  #Gallery-Grid .div-content-steak {
+    background-image: url("/Assets/img/gallery/img5gallerybox.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: 2/3/2/4;
+    height: auto;
+    width: 100%;
+  }
+  #Gallery-Grid .div-content-burger {
+    background-image: url("/Assets/img/gallery/img6gallerybox.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    grid-area: 2/4/2/6;
   }
 }
 #Chefs {
