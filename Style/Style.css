@@ -777,6 +777,7 @@ header .contact {
   background-size: 109% 107%;
   background-position: 49% 18%;
   background-repeat: no-repeat;
+  padding-bottom: 5%;
 }
 #Chefs .sectionText {
   color: white;
@@ -790,12 +791,25 @@ header .contact {
        column-gap: 2%;
   padding: 5% 0;
 }
-#ourChefs-Grid .item:nth-child(odd) {
-  grid-column: 2;
-}
-#ourChefs-Grid .item:nth-child(even) {
-  grid-column: 3;
-}
 #ourChefs-Grid img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #ourChefs-Grid .item:nth-child(odd) {
+    grid-column: 2;
+  }
+  #ourChefs-Grid .item:nth-child(even) {
+    grid-column: 3;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #ourChefs-Grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 2% 15%;
+  }
+  #ourChefs-Grid img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Style.css.map */

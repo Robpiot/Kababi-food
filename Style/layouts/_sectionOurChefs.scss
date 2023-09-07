@@ -3,6 +3,7 @@
     background-size: 109% 107%;
     background-position: 49% 18%;
     background-repeat: no-repeat;
+    padding-bottom:5%;
 
     .sectionText{
         color:white;
@@ -15,6 +16,13 @@
   
     gap: 3%;
     column-gap: 2%;
+    padding:5% 0;
+
+    img{
+        width:100%;
+    }
+
+    @media screen and (max-width:768px) {
         .item:nth-child(odd){
             grid-column: 2;
         }
@@ -22,9 +30,20 @@
         .item:nth-child(even){
             grid-column: 3;
         }
-    padding:5% 0;
+    }
+        
+   
 
-    img{
-        width:100%;
+}
+
+@media screen and (min-width:769px) {
+
+    #ourChefs-Grid{
+        display:grid;
+        grid-template-columns: auto auto auto auto ;
+        margin: 2% 15%;
+        img{
+            width:100%;
+        }
     }
 }
